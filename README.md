@@ -59,6 +59,8 @@ Proceed with the notebook's section about Encoding.
 
 **Task**: answer the following question:
  * Is there a perceivable change of the audio file? Does the sound quality remain?
+ * Do you see a difference between the unembedded and embedded audio file's spectrogram? Could you conclude on the plot alone that it was done using phase coding? How would the plot look like for LSB coding?
+
 
 
 </details>
@@ -72,8 +74,6 @@ Now, reconstruct the message from the embedded audio file and analyze the accura
  * Are there bit errors? If yes, what might be the reason for them?
  * What does a bit error rate of 100%, 50%, and 0% mean? Which one is the least desirable?
  * Which of the two audio files (`MobileComp1`, `MobileComp2`) has a higher bit error rate? Was your initial guess correct?
- * Do you see a difference between the unembedded and embedded audio file's spectrogram? Could you conclude on the plot alone that it was done using phase coding? How would the plot look like for LSB coding?
-
 
 </details>
 
