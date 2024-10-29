@@ -81,7 +81,7 @@ Now, reconstruct the message from the embedded audio file and analyze the accura
 <details><summary>Click to expand</summary>
 
 Please think about the following questions, no report needed:
- * What could be some issues with audio steganography when used in a real life setting?
+ * What could be some issues with audio steganography when used in a real life setting? How could this be mitigated?
  * How would the perfect audio file for phase coding look like? What about the worst possible file?
  * Which results do you expect from the other audio files within `Sounds/`?
 
