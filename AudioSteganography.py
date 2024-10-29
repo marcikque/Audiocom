@@ -1,3 +1,17 @@
+# ============================================================
+# Audio Steganography Handler
+# ============================================================
+# This file manages audio steganography functionality used 
+# within the Jupyter Notebook environment. It provides methods 
+# to encode and decode messages hidden in audio files, serving 
+# as a supporting module for assignment tasks.
+# 
+# NOTE: Direct interaction with this file is unnecessary for 
+# completing the assignment. All required usage is handled 
+# within the Jupyter Notebook itself.
+# ============================================================
+
+#
 # Credit for this code goes to Guang Yang
 # Developed and published on GitHub: GY19A/improved_audio_phase_encoding
 #
