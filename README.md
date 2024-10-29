@@ -14,7 +14,7 @@
 
 **The submission deadline is Monday, 2024-Nov-25.** Please note the [Submission Guidelines](home/Submission-Guidelines) of this course. Students must work independently, and provide their own results. In polybox, please use the same file naming conventions as in the previous assignment.
 
-The **motivation of this assignment** is to explore the fundamentals of acoustic communication by using audible sound as a carrier for data transmission. 
+The **motivation for this assignment** is to explore the fundamentals of acoustic communication by using audible sound as a carrier for data transmission. 
 This involves understanding how to embed data into sound through phase shifts and multi-frequency modulation. By examining this approach, we aim to grasp the potential and limitations of acoustic data transmission. 
 Additionally, a key focus will be on best practices for data representation and visualization, enabling us to derive meaningful conclusions from the evaluation process.
 
@@ -31,8 +31,8 @@ Read through the Audio Communication lecture slides and the related background r
 
 Please think about the following questions, no report needed:
  * Does acoustic communication rely on electromagnetic waves? How fast do acoustic waves travel through air (estimate)?
- * When sampling at 10 kHz, what is the resolution that a time-of-flight distance measurement (also referred to as [time-of-arrival](https://www.google.com/url?q=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTime_of_arrival&sa=D)) could achieve in theory (estimate, leave out implementation details)? Think about how many samples per second are available, and what the precision in terms of time that means. Say, a signal is switched on and off, at what time precision can be a shift of this signal be detected? Once this is clear, transform time precision into distance. For this, remember the speed of an acoustic signal.
- * At this 10kHz sampling rate, what would be the precision with electromagnetic waves Remember that an electromagnetic signal travels much faster than an acoustic signal.
+ * When sampling at 10 kHz, what is the resolution that a time-of-flight distance measurement (also referred to as [time-of-arrival](https://en.wikipedia.org/wiki/Time_of_arrival)) could achieve in theory (estimate, leave out implementation details)? Think about how many samples per second are available, and what the precision in terms of time that means. Say, a signal is switched on and off, at what time precision can be a shift of this signal be detected? Once this is clear, transform time precision into distance. For this, remember the speed of an acoustic signal.
+ * At this 10kHz sampling rate, what would be the precision with electromagnetic waves Remember that an electromagnetic signal travels much faster than an acoustic signal?
  * How would the distance precision change if the sampling rate is doubled to 20 kHz instead (for both, acoustic and electromagnetic waves)?
  * What is the typical bandwidth, measured in Hertz, of an acoustic sound recorded with a smartphone or a similar device?
  * What is the frequency range at which humans perceive sound (from ... to ..., measured in Hertz)?
@@ -46,10 +46,10 @@ Please think about the following questions, no report needed:
 Start off by analyzing two sounds: *MobileComp1* and *MobileComp2*.
 
 **Task**: answer the following questions:
- * Which sound file is more suited to carry the data? Why? Provide the visualizations and discuss them (time/frequency/spectogram)
+ * Which sound file is more suited to carry the data? Why? Provide the visualizations and discuss them (time/frequency/spectrogram)
  * Which frequencies should be used to encode the data?
 
-*Note*: the plotting of the spectogram may take some time. If needed, you can reduce the `FFT_win_size` parameter, although this may impact the quality of the output.
+*Note*: the plotting of the spectrogram may take some time. If needed, you can reduce the `FFT_win_size` parameter, although this may impact the quality of the output.
 </details>
 
 # Step 3: Embed the message
@@ -72,7 +72,7 @@ Now, reconstruct the message from the embedded audio file and analyze the accura
  * Are there bit errors? If yes, what might be the reason for them?
  * What does a bit error rate of 100%, 50%, and 0% mean? Which one is the least desirable?
  * Which of the two audio files (`MobileComp1`, `MobileComp2`) has a higher bit error rate? Was your initial guess correct?
- * Do you see a difference between the unembedded and embedded audio file's spectogram? Could you conclude on the plot alone that it was done using phase coding? How would the plot look like for LSB coding?
+ * Do you see a difference between the unembedded and embedded audio file's spectrogram? Could you conclude on the plot alone that it was done using phase coding? How would the plot look like for LSB coding?
 
 
 </details>
@@ -91,7 +91,7 @@ Please make sure that the chosen audio file has enough capacity for the message.
 
 **Task**: answer the following question:
  * Which sound did you choose? Why?
- * How does your audio file measure up against `MobComp1` and `MobComp2` respectively?
+ * How does your audio file measure up against `MobileComp1` and `MobileComp2` respectively?
  * What is the bit error rate?
  * How does it look like when changing the message to `manimatter`?
 
@@ -104,9 +104,9 @@ Please submit the following results (do not forget the visualizations), through 
 
 - Name and Legi number
 - Step 1: (no report needed)
-- Step 2: Visualizations (time/frequency/spectogram) and answers to the questions
+- Step 2: Visualizations (time/frequency/spectrogram) and answers to the questions
 - Step 3: Answers to the questions (no visualizations)
-- Step 4: Visualizations (spectogram) and answers to the questions
+- Step 4: Visualizations (spectrogram) and answers to the questions
 - Step 5: Answers to the questions (no visualizations or audio files)
 - OPTIONAL: feedback on the assignment: difficulty, clarity, time spent
 
